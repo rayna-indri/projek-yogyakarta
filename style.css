@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav a{
+    text-decoration: none ;
+}
+
+a:hover{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+a:hover::after {
+  content: " 🔗";
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+body > header {
+  background-color: rgb(132, 156, 214);
+  color: white;
+  padding-top: 30px;
+}
+
+
+header h1{
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+header p{
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+
+nav {
+  background-color: rgb(131, 133, 172);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 10px;
+}
+
+nav li, a{
+  color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    margin: 40px;
+    gap: 20px;
+}
+
+#content {
+    flex: 3;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: justify;
+    padding: 30px; /* TAMBAHAN: Memberi jarak agar teks/gambar tidak menempel di pinggir kotak shadow */
+    box-sizing: border-box;
+}  
+
+aside {
+    flex: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px; /* TAMBAHAN: Memberi jarak agar teks tidak menempel di pinggir kotak shadow */
+    box-sizing: border-box;
+}
+
+article > h2 {
+    text-align: center;
+}
+
+/* PERBAIKAN: Sebelumnya #contentimg (tanpa spasi), yang benar adalah #content img */
+#content img {
+    margin-top: 15px;
+    margin-bottom: 25px; /* Jarak dari teks di bawahnya */
+    max-width: 100%;     /* Agar gambar tidak keluar/jebol dari kotak shadow */
+    height: auto;
+    border-radius: 10px; /* Opsional: membuat sudut gambar sedikit membulat agar estetik */
+}
+
+#content p {
+    margin-top: 15px;
+    line-height: 1.6; /* Membuat jarak antar baris teks lebih lega untuk dibaca */
+}
